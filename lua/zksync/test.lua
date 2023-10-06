@@ -1,2 +1,2 @@
 local zksync = require("zksync")
-vim.print(zksync)
+zksync.message()
