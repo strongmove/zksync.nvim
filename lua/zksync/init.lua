@@ -1,3 +1,6 @@
-vim.notify("Starting zksync.nvim")
-local M = {}
+local M = {
+	message = function()
+		vim.notify("zksync.nvim started")
+	end,
+}
 return M
