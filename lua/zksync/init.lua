@@ -1,6 +1,10 @@
+local M = {}
+local opts = {}
+
 local M = {
-	message = function()
-		vim.notify("zksync.nvim started")
+	opts = opts,
+	setup = function(options)
+		opts = vim.tbl_deep_extend("force", opts, options or {})
 	end,
 }
 return M
