@@ -5,3 +5,4 @@ local zksync = require("zksync").setup({
 	},
 })
 vim.print(vim.inspect(zksync.opts))
+vim.print(vim.inspect(zksync))
